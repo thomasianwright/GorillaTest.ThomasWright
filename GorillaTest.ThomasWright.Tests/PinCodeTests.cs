@@ -14,6 +14,8 @@ public class PinCodeTests
     [Theory]
     [InlineData("1234")]
     [InlineData("4312")]
+    [InlineData("553452")]
+    [InlineData("462536")]
     public void Assert_Test_Success_With_Correctly_Formatted_Pincodes(string value)
     {
         Assert.Equal(PinCode.ParsePinCode(value), PinSuccessMessage);
